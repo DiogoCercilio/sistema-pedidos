@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pr-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://sistemapoliedro.com.br/cdn/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="library/css/main.css">
+</head>
+<body>
+	<div class="mask"></div>
+	<header class="top"><!-- Topo -->
+		<div class="block-top medium">
+			<section class="logo">
+				<a href="#"><img src="library/img/logo-poliedro.png" alt=""></a>
+			</section>
+		</div>
+
+		<div class="block-top large right hidden-mobile">
+			<span class="logout-button fa fa-home fa-fw">
+				<a href="#" title="Sair">Sair</a>
+			</span>
+
+			<span class="user-picture fa fa-book fa-fw">
+				<a href="#"><img src="" alt=""></a>
+			</span>				
+			<div class="data-user">
+				<span class="user-name">
+					<a href="#">Poliedro\Diogo.Silva</a>
+				</span>
+				<span class="user-occupation">Coordenador / RH</span>
+			</div>
+		</div>
+		
+		<!-- mobile -->
+		<a href="#" class="mobile-trigger"><i class="fa fa-bars"></i></a>
+		<!-- /mobile -->
+	</header><!-- /Topo -->
+
+	<aside class="left-nav"><!-- Sidebar -->
+		<div class="mobile-data"><!-- mobile -->
+			<span class="logout-button fa fa-home fa-fw">
+				<a href="#" title="Sair">Sair</a>
+			</span>
+
+			<span class="user-picture fa fa-book fa-fw">
+				<a href="#"><img src="" alt=""></a>
+			</span>				
+			<div>
+				<span>
+					<a href="#">Poliedro\Diogo.Silva</a>
+				</span><br/>
+				<span>Coordenador / RH</span>
+			</div>	
+			<div class="clear"></div>		
+		</div><!-- /mobile -->
+		
+		<ul>
+		  <li class="active"><a href="#"><i class="fa fa-home fa-fw"></i> Colaboradores</a></li>
+		  <li><a href="#"><i class="fa fa-book fa-fw"></i> Registro de Plantão</a></li>
+		  <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Grade Plantões</a></li>
+		  <li><a href="#"><i class="fa fa-cogs fa-fw"></i> Redações</a></li>
+		  <li><a href="#"><i class="fa fa-book fa-fw"></i> Reuniões</a></li>
+		  <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Fechamento RH</a></li>
+		</ul>			
+	</aside><!-- Sidebar -->
+	
+	<section class="base-content"><!-- Conteúdo principal -->
+		<section class="intro-content">
+			<div class="user-picture">
+				<img src="http://static1.belezaextraordinaria.com.br/articles/8/38/8/@/2572--100x100-2.jpg" alt="">
+			</div>
+
+			<div class="user-description">
+				<h1>Seja bem vindo!</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate veniam, earum aspernatur hic. Placeat consequatur possimus corporis quam ea velit. Cum laboriosam beatae et omnis, error accusantium deserunt. Repellat.</p>
+			</div>
+
+			<div class="clear"></div>
+		</section>
+		
+		<div class="content">
+			<h1>Itens no Carrinho</h1>
+			<hr/>
+
+<style>
+	.itens-checkout,.wrapper-itens-checkout-buttons{
+		width:100%;
+		max-width:900px;
+		margin:0 auto;
+	}
+
+	.itens-checkout td{
+		text-align:center;
+	}
+
+	.itens-checkout i{
+		font-size:1.3em;
+		color:$light-blue;		
+	}	
+
+	td.item-checkout-description{
+		text-align:left;
+	}
+
+	.wrapper-itens-checkout-buttons{
+		margin:30px auto;
+	}
+
+</style>
+    <table class="itens-checkout">
+        <tbody>
+        	<tr>
+        		<td><h4>Compra</h4></td>
+        	</tr>
+        	<tr>
+	            <td style="width:45px;"></td>
+	            <td style="width:420px;"><strong>Descrição</strong></td>
+	            <td style="width:70px;"><strong>Quantidade</strong></td>
+	            <td style="width:90px;"><strong>Valor Unitario</strong></td>
+	            <td style="width:70px;"><strong>Total</strong></td>
+	            <td style="width:30px"></td>
+	        </tr>
+
+            <tr style="border-bottom:1pt solid black;">
+                <td><img src="/Content/Imagens/produto.jpg" height="45" width="40"></td>
+                <td class="item-checkout-description">Caderno Hexa 1 - PV<br>2014 - PV - Extensivo Noite</td>
+                <td>1</td>
+                <td>R$ 5,50</td>
+                <td>R$ 5,50</td>
+                <td><a href="#"><i class="fa fa-times"></i></a></td>
+            </tr>
+	        <tr>
+	            <td colspan="5" style="text-align:right; height: 30px; font-size:large;"><strong>Total R$ 5,50</strong></td>
+	        </tr>
+    	</tbody>
+    </table>
+    
+	<div class="wrapper-itens-checkout-buttons">
+	    <button class="btn btn-info" id="continuarComprandoButton" style="text-align:left;" onclick="document.location.href = '/produto/index';">Continuar Comprando</button>
+	    <button class="btn btn-info" id="fecharPedidoButton" onclick="document.location.href = '/pedido/EscolherTransportadora';">Fechar Pedido</button>
+	    <button class="btn btn-info" id="salvarRascunhoButton" style="float:right;margin-right:10px" onclick="salvarRascunho();"><i class="fa fa-save fa-fw"></i>&nbsp;Salvar Rascunho</button>
+    	
+    	<p style="font-size:xx-small;margin-top:30px; text-align:right">*Os materiais de linguas estão sujeitos a analise para bonificação.</p>
+	</div>	
+   
+		</div>
+		
+		<footer class="footer"><p>Exemplo de Rodapé 2014 - 2014. Todos os direitos reservados</p></footer>
+	</section><!-- /Conteúdo principal -->
+
+	<!-- scripts -->
+	<script defer src="http://www.sistemapoliedro.com.br/cdn/jquery/jquery.min.js"></script>
+	<script defer src="http://www.sistemapoliedro.com.br/cdn/modernizr/modernizr.js"></script>
+	<script async src="library/js/main.js"></script>	
+</body>
+</html>

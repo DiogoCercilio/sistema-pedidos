@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="k-webkit k-webkit38 js "><head>
+    <meta name="viewport" content="width=device-width" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <title>AdicionarProdutoCarrinho</title>
+
+	<link rel="stylesheet" href="http://sistemapoliedro.com.br/cdn/bootstrap/bootstrap.css">
+    <link href="/Content/css?v=f-N7JCvdvBCgffpDvSW7v3yMwTT9hvUV_IshAKSWTvI1" rel="stylesheet">
+    <link href="/Content/kendo/2013.3.1316/kendo.common.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/kendo/2013.3.1316/kendo.dataviz.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/kendo/2013.3.1316/kendo.default.min.css" rel="stylesheet" type="text/css">
+    <link href="/Content/kendo/2013.3.1316/kendo.dataviz.default.min.css" rel="stylesheet" type="text/css">
+    <script src="/Scripts/kendo/2013.3.1316/jquery.min.js"></script>
+    <script src="/Scripts/kendo/2013.3.1316/kendo.all.min.js"></script>
+    <script src="/Scripts/kendo/2013.3.1316/kendo.aspnetmvc.min.js"></script>
+    <script src="/Scripts/kendo.modernizr.custom.js"></script>
+</head>
+<body>
+	<script src="http://www.sistemapoliedro.com.br/cdn/jquery/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('#adicionar').on('click', function(){
+				$('.alert-success').fadeIn();	
+			})
+		})
+	</script>
+	<div class="alert alert-success" role="alert" style="display:none;">Sucesso</div>
+    <div>
+        <div style="float:left"><img src="http://portal-hmg:8081/Content/Imagens/produto.jpg" height="100" width="80"></div>
+    </div>
+    <br>
+    <div>
+        Livro de Física 2 - PV - Livros PV
+    </div>
+    <br>
+    <div>
+        2014 - PV - Turma Medicina
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        Tipo de Venda: Obrigatório
+    </div>
+    <div>Valor Unitário: R$ 12,50</div>
+    <div>Quantidade:<span class="k-widget k-numerictextbox"><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;"><input data-val="true" data-val-number="The field Quantidade must be a number." data-val-required="O campo Quantidade é obrigatório." id="Quantidade" max="9999" min="0" name="Quantidade" type="text" value="0" data-role="numerictextbox" role="spinbutton" class="k-input" aria-valuemin="0" aria-valuemax="9999" aria-valuenow="0" aria-disabled="false" aria-readonly="false" style="display: none;"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><script>
+	jQuery(function(){jQuery("#Quantidade").kendoNumericTextBox({"change":change,"spin":spin,"format":"0"});});
+</script>
+    </div>
+
+    <div>
+        <p id="total">Total: R$ 00.00</p>
+    </div>
+    <input data-val="true" data-val-required="O campo ItemEntregaUp é obrigatório." id="ItemEntregaUp" name="ItemEntregaUp" type="hidden" value="a470848b-ce76-e311-90fa-00155d020339">
+    <input data-val="true" data-val-required="O campo ProdutoId é obrigatório." id="ProdutoId" name="ProdutoId" type="hidden" value="fd56c0e9-c36f-e211-82ad-00155d020339">
+    <input style="padding:10px;background:#5af;border:1px solid #38c;border-radius:4px;color:#fff;margin:20px 0;" type="button" id="adicionar" value="Adicionar ao Carrinho de Compras">
+
+<link href="/Content/alertify/alertify.css" rel="stylesheet" type="text/css">
+<link href="/Content/alertify/alertify.rtl.css" rel="stylesheet" type="text/css">
+<link href="/Content/alertify/default.rtl.css" rel="stylesheet" type="text/css">
+<link href="/Content/alertify/default.css" rel="stylesheet" type="text/css">
+<script src="/Scripts/alertify.min.js"></script>
+
+
+</body>
+</html>	
