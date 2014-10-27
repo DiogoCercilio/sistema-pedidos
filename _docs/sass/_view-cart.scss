@@ -1,0 +1,46 @@
+	.itens-checkout,.wrapper-itens-checkout-buttons{
+		width:100%;
+		max-width:900px;
+		margin:0 auto;
+	}
+
+	.itens-checkout td{
+		text-align:center;
+	}
+
+	.itens-checkout i{
+		font-size:1.3em;
+		color:$light-blue;		
+	}	
+
+	td.item-checkout-description{
+		text-align:left;
+	}
+
+	.wrapper-itens-checkout-buttons{
+		margin:30px auto;
+	}
+
+@media (max-width:600px){
+	.td-description > strong{
+		text-align: left;
+	}
+	.mobile-tr-head{
+		border-bottom: 1pt solid #bbb;height: 62px		
+	}
+	#continuarComprandoButton{
+		text-align:left;display: block;margin: 20px auto;		
+	}
+	#fecharPedidoButton{
+		display: block;margin: 0 auto		
+	}
+	#salvarRascunhoButton{
+		float: right;margin-right:10px;display: block;margin: 0 auto;clear: both!important;float: none;margin-top: 20px
+	}
+	.content.view-cart{
+		min-height:400px;
+	}
+	td.item-checkout-description{
+		width:48%;
+	}
+}	

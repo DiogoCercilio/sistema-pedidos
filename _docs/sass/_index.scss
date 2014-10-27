@@ -4,34 +4,57 @@ body.index{
 	font-size:20px;
 	margin:0;
 	padding:0;
-	font-family:helvetica;
-	color:#555;
 }
-.index select{
+body.index p{
+	font-family: helvetica !important;
+	color: #555;
+	line-height: 17px;
+	margin-bottom: 19px;
+}
+body.index select{
+	background:$light-blue;
+	padding: 3px 5px;
+	margin: 5px 0px 10px 0;
+	color: #fff;
 	width:150px;
 }
-.index figure{
+body.index option{
+	color:#fff;
+}
+body.index input[type="submit"]{
+	background:$dark-blue!important;
+	padding: 4px 10px;
+	color: #fff;
+
+	&:hover{
+		background:darken($dark-blue,20%)!important;
+		padding: 4px 10px;
+		color: #fff;	
+	}
+}
+body.index figure{
 	margin-top:10%;
 	text-align:center;
 	color:#fff;
 }
-.index img{
+body.index img{
 	max-width:100%;
 }
-.index .main-message{
+body.index .main-message{
 	width: 480px;
-	max-width:90%;
+	max-width: 90%;
 	height: auto;
 	background: #fff;
 	margin: 0 auto;
-	border: 1px solid #ddd;
+	border: 2px solid #ccc;
 	padding: 10px 10px 20px 10px;
 	text-align: center;
 	position: relative;
 	z-index: 2;
 	font-size: .7em;
+	box-shadow: 2px -2px 12px -2px rgba(0,0,0,.5);
 }
-.index footer{
+body.index footer{
 	width:100%;
 	height:100%;
 	position:absolute;

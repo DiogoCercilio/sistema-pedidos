@@ -20,6 +20,9 @@
 
 /*Normal Screens*/
 @media (max-width:1400px){
+	h5{
+		font-size:.8em;
+	}
 	.left-nav{
 		width:20%;
 	}
@@ -33,6 +36,9 @@
 	.sidebar-cart{
 		width:16%;
 	}	
+	.sidebar-cart h4{
+		font-size:1em;
+	}
 }
 
 /*Small Screens and Tablet*/
@@ -65,7 +71,7 @@
 	}
 
 	.intro-content{
-		width:113%;
+		width:100%;
 	}
 
 	.product-description{
@@ -107,14 +113,19 @@
 		box-shadow:3px 0px 4px rgba(0,0,0,.4);
 	}
 	.left-nav ul{
-		margin-top:30px;
+		margin-top:0;
+		padding-top:0;
 	}
 	.left-nav li,.left-nav i{
 		text-indent:0;
 	}	
 	.left-nav li > a{
-		font-size:1.3em;
-	}		
+		font-size:1em;
+		line-height:1.1em;
+	}	
+	.mobile-data{
+		margin:0;
+	}	
 	.base-content{
 		width:100%;
 		margin-left:0;

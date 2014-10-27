@@ -253,13 +253,18 @@ body{
   font-size:13px;
   overflow-x:hidden;
   width:100%;
-  min-width:380px;
+  /*min-width:380px;*/
 }
 
 html{
   overflow-x:hidden;
   width:100%;
 }
+
+.ajs-ok{
+  display:none;
+}
+
 .clear{
   clear:both;
 }
